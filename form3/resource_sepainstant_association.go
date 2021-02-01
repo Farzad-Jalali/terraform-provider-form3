@@ -181,6 +181,7 @@ func resourceSepaInstantAssociationUpdate(d *schema.ResourceData, meta interface
 				Type:           models.SepaInstantAssociationReferenceTypeSepainstantAssociations,
 				Attributes: &models.UpdateSepaInstantAssociationAttributes{
 					DisableOutboundPayments: association.Attributes.DisableOutboundPayments,
+					ReachableBics:           association.Attributes.ReachableBics,
 				},
 			},
 		}))
